@@ -1,0 +1,152 @@
+/** GERAL **/
+@charset "UTF-8";
+
+:root {
+  --cor1: rgb(242, 176, 114);
+  --cor2: rgb(181, 159, 139);
+  --cor3: rgb(165, 120, 78);
+  --cor4: rgb(242, 213, 187);
+  --cor5: rgb(115, 83, 54);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Tahoma, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+}
+
+/** SETA **/
+.inicio-da-pagina {
+  background-color: rgb(242, 176, 114); /*rgba(255, 127, 80, 0.502)*/
+  border: none;
+  border-radius: 100%;
+  bottom: 27px;
+  box-shadow: 0 5px #999;
+  color: #fff;
+  cursor: pointer;
+  font-size: 24px;
+  height: 48px;
+  position: fixed;
+  right: 12px;
+  width: 48px;
+}
+
+.inicio-da-pagina:hover {
+  background-color: rgba(255,127,80,0.8);
+}
+
+.inicio-da-pagina:active {
+  background-color: rgba(255,127,80,1);
+  box-shadow: 0 4px #666;
+  transform: translateY(4px);
+}
+
+/* IMAGEM MAIOR */
+.img-grande {
+  background-image: url("../images/destaque.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  padding: 240px 8px;
+  position: relative;
+  width: 100%;
+}
+
+/* IMAGEM MÉDIA E PEQUENA */
+.img-media-pequena {
+  display: none;
+  position: relative;
+}
+
+.img-media-pequena img {
+  height: auto;
+  width: 100%;
+}
+
+/* TÍTULO */
+.titulo h1 {
+  color: #f1f1f1;
+  border: 2px inset #ccc;
+  font-size: 2.0em;
+  left: 50%;
+  letter-spacing: 4px;
+  padding: 40px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+/* TÍTULO H2 */
+h2 {
+  font-size: 2em;
+  margin: 16px 0;
+  opacity: 0.60;
+  text-align: center;
+}
+
+/* FRASE */
+.frase {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 24px auto;
+  padding: 40px 16px;
+  text-align: center;
+  width: 50%;
+}
+
+q {
+  font-style: italic;
+}
+
+/* GRID DE FOTOS */
+.container-fotos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.coluna {
+  margin: auto;
+  margin-top: 8px;
+  max-width: 25%;
+}
+
+.coluna img {
+  height: auto;
+  margin-top: 5px;
+  padding: 0 4px;
+  width: 100%;
+}
+
+/* FOOTER */
+footer {
+  background-color: var(--cor2);
+  margin-top: 72px;
+  padding: 32px 0;
+  text-align: center;
+}
+
+footer p {
+  color: var(--cor3);
+  font-size: 18px;
+}
+
+.contato {
+  padding: 4px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.contato a {
+  margin-right: 16px;
+}
+
+.contato i {
+  color: white;
+  font-size: 24px;
+}

@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 800px) {
+  /* Header */
+  .img-grande {
+    display: none;
+  }
+
+  .img-media-pequena {
+    display: block;
+  }
+
+  /* Grid de Fotos */
+  .coluna {
+    flex: 50%;
+    max-width: 50%;
+  }
+
+  .titulo h1 {
+    font-size: 1.5em;
+    padding: 32px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* Grid de Fotos */
+  .coluna {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .titulo h1 {
+    font-size: 1.0em;
+    padding: 16px;
+  }
+}
