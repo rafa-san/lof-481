@@ -22,11 +22,11 @@ body, html {
 
 /** SETA **/
 .inicio-da-pagina {
-  background-color: rgb(242, 176, 114); /*rgba(255, 127, 80, 0.502)*/
+  background-color: rgba(115, 83, 54, 0.5);
   border: none;
   border-radius: 100%;
-  bottom: 27px;
-  box-shadow: 0 5px #999;
+  bottom: 23px;
+  box-shadow: 0 3px #666;
   color: #fff;
   cursor: pointer;
   font-size: 24px;
@@ -37,12 +37,12 @@ body, html {
 }
 
 .inicio-da-pagina:hover {
-  background-color: rgba(255,127,80,0.8);
+  background-color: rgba(115, 83, 54, 0.8);
 }
 
 .inicio-da-pagina:active {
-  background-color: rgba(255,127,80,1);
-  box-shadow: 0 4px #666;
+  background-color: rgba(115, 83, 54, 1.0);
+  box-shadow: 0 2px #666;
   transform: translateY(4px);
 }
 
@@ -71,12 +71,12 @@ body, html {
 
 /* TÍTULO */
 .titulo h1 {
-  color: #f1f1f1;
-  border: 2px inset #ccc;
+  color: #fff;
+  border: 2px outset #fff;
   font-size: 2.0em;
   left: 50%;
   letter-spacing: 4px;
-  padding: 40px;
+  padding: 40px 80px;
   text-align: center;
   position: absolute;
   top: 50%;
@@ -85,23 +85,11 @@ body, html {
 
 /* TÍTULO H2 */
 h2 {
+  color: var(--cor5);
   font-size: 2em;
-  margin: 16px 0;
-  opacity: 0.60;
+  margin: 32px 0;
+  opacity: 0.90;
   text-align: center;
-}
-
-/* FRASE */
-.frase {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin: 24px auto;
-  padding: 40px 16px;
-  text-align: center;
-  width: 50%;
-}
-
-q {
-  font-style: italic;
 }
 
 /* GRID DE FOTOS */
@@ -112,7 +100,7 @@ q {
 
 .coluna {
   margin: auto;
-  margin-top: 8px;
+  margin-top: 5px;
   max-width: 25%;
 }
 
@@ -125,15 +113,16 @@ q {
 
 /* FOOTER */
 footer {
-  background-color: var(--cor2);
+  background-color: var(--cor4);
   margin-top: 72px;
-  padding: 32px 0;
+  padding: 24px 0;
   text-align: center;
 }
 
 footer p {
-  color: var(--cor3);
-  font-size: 18px;
+  color: var(--cor5);
+  font-size: 1.2em;
+  margin: 8px 0;
 }
 
 .contato {
@@ -147,6 +136,10 @@ footer p {
 }
 
 .contato i {
-  color: white;
-  font-size: 24px;
+  color: var(--cor5);
+  font-size: 26px;
+}
+
+.contato i:hover {
+  color: rgba(115, 83, 54, 0.8);
 }
